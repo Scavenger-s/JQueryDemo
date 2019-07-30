@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script type="text/javascript">
+			//内容选择器,查询内容不区分大小写，空格
+			$(function(){
+				//$("table td:contains('hello')").attr("class","info");
+				//$("div>ul li:contains('hello')").attr("class","info");
+				//查询不包含子元素 :empty,取空元素
+				//查询包含
+				//$("div:has(span>p)").attr("class","info");
+				//父元素选择
+				$("span").parent().attr("class","info");
+			});
+		</script>
+	</head>
+	<body>
+		<table border="1px">
+			<tr>
+				<td>hello</td>
+				<td>world</td>
+			</tr>
+			<tr>
+				<td>java</td>
+				<td>php</td>
+			</tr>
+		</table>
+		<div>
+			<ul>
+				<li>hello</li>
+				<li>java</li>
+			</ul>
+		</div>
+		<div>helllll
+			<span><p>www.baidu.com</p></span>
+		</div>
+	</body>
+</html>

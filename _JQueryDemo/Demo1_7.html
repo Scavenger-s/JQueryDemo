@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script type="text/javascript">
+			//高级选择器
+			//元素 元素
+			$(function(){
+				//$("div span").attr("class", "info");
+				//父节点>子节点
+				//$("#mydiv>span").attr("class", "info");
+				//父节点+相邻节点 可以使用next函数
+			    //$("#mydiv+span").attr("class", "info");
+			    $("#mydiv").next().attr("class", "info");
+				//父节点~兄弟节点 可以使用nextAll函数
+				//$("#mydiv~span").attr("class", "info");
+				//$("#mydiv").nextAll().attr("class", "info");
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="cls">www.baidu.cn</div>
+		<div class="cls" id="mydiv">
+			 <span>www.hhh</span>
+			 <div>
+			 	<span>hello world</span>
+			 </div>
+		</div>
+		<span>www.ppp</span><br>
+		<span>www.ppps</span><br>
+		<span>www.pa</span><br>
+		<span>www.wp</span><br>
+		<input type="text" value="22222">
+		
+	</body>
+</html>

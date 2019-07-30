@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+			//元素名称取得多个元素
+			//,不要加空格
+			$(function(){
+				$("div, input").attr("class", "info");
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div class="cls">www.baidu.cn</div>
+		<div class="cls">
+			 <span>www.hhh</span>
+		</div>
+		<span>www.ppp</span><br>
+		<input type="text" value="22222">
+	</body>
+</html>

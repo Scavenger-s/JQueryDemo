@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script type="text/javascript">
+			//可见选择器,显示与隐藏
+			//:hidden(取得所有隐藏元素) , :visible(取得所有显示元素)
+			//将隐藏层变为显示层
+			$(function(){
+				//5000 渐变时间
+				//$("div:hidden").show(5000);
+				//将显示层变为隐藏层
+				$("div:visible").hide(5000);
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div id="firstdiv">
+			<h1>hello first</h1>
+		</div>
+		<div id="seconddiv" style="display: none;">
+			<h1>hello second</h1>
+		</div>
+		<div>
+			<input type="button" name="" id="" value="隐藏第一个层" />
+			<input type="button" name="" id="" value="显示第二个层" />
+		</div>
+		<div style="display: block;">hello - 1</div>
+		<div style="display: block;">hello - 2</div>
+		<div style="display: none;">hello - 3</div>
+		<div style="display: none;">hello - 4</div>
+		<div style="display: block;">hello - 5</div>
+	</body>
+</html>

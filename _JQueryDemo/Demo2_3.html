@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+			//子元素选择器:nth-child,索引从1开始,even偶数列，odd奇数列
+			$(function(){
+				//$("table td:nth-child(2)").attr("class","info");
+				$("table td:nth-child(odd)").attr("class","info");
+				//:first-child 相当于:nth-child(1)，：last-child, :only-child 只有一个子元素
+			});
+		</script>
+	</head>
+	<body>
+		<table border="1px" width="35%">
+			<tr>
+				<td>01</td>
+				<td>02</td>
+				<td>03</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+			</tr>
+		</table>
+	</body>
+</html>

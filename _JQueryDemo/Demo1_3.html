@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script language="JavaScript">
+			function show(){
+				//根据ID匹配元素
+				alert($("#msg").val());
+			}
+			//带点的使用转义字符\\
+			function display(){
+				alert($("#member\\.msg").val());
+			}
+		</script>
+	</head>
+	<body>
+		<!--<input type="text" name="msg" id="msg">
+		<input type="button" value="显示内容" onclick="show()">-->
+		
+		<input type="text" name="member.msg" id="member.msg">
+		<input type="button" value="显示内容" onclick="display()">
+	</body>
+</html>

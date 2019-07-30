@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+			//表单对象选择器
+			//:enabled,取得所有可以使用的,:disabled
+			//:checked,取得所有被选中，:selected取得所有被选中的options元素
+			//:text,取得所有文本输入元素,:radio,:button,:submit,:reset,:password,:input
+			//返回都是元素集合
+			$(function(){
+				//find()取得全部子元素,children()取得第一级别子元素
+				//$(".lev-a").find(".lev-b").attr("class","info");
+				$(":password").attr("class","info");
+			});
+		</script>
+	</head>
+	<body>
+		<input type="password" name="" id="" value="" />
+	</body>
+</html>

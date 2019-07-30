@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script type="text/javascript">
+			//索引选择器
+			//元素 元素
+			$(function(){
+				//取第一个操作,在表格上也适用
+			    //$("div>ul li:first").attr("class", "info");
+				//$("div>ul li").first().attr("class", "info");
+				//取最后一个,在表格上也适用
+				//$("div>ul li:first").attr("class", "info");
+				//$("div>ul li").last().attr("class", "info");
+				//：not排除指定元素之外的
+				//$("div *:not(input,span)").attr("class","info");
+				//:even 返回索引值为偶数的集合，:odd 返回索引为奇数的集合
+				//$("div>ul li:even").attr("class", "info");
+				//:eq,索引值选择，根据索引小标内容取得元素
+				//：gt,取得索引值大于此的元素，:lt,小于
+				//$("div>ul li:gt(2)").attr("class", "info");
+				//$("div>ul li:lt(3)").attr("class", "info");
+				//:header,取出标题内元素,h1 - h6
+				$("div :header:gt(2)").attr("class", "info");
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>www- 0</li>
+				<li>www- 1</li>
+				<li>www- 2</li>
+				<li>www- 3</li>
+				<li>www- 4</li>
+				<li>www- 5</li>
+			</ul>
+		</div>
+		<br>
+		<div>
+			<div>
+			<span>用户名</span>
+			<input type="text" value="ll">
+			</div>
+			<div>
+			<span>密码</span>
+			<input type="password" value="ll">
+			</div>
+		</div>
+		<div>
+			
+				<h1>www- 0</h1>
+				<h2>www- 0</h2>
+				<h3>www- 0</h3>
+				<h4>www- 0</h4>
+				<h5>www- 0</h5>
+				<h6>www- 0</h6>
+			
+		</div>
+	</body>
+</html>
