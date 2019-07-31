@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+			//动态设置
+			var count = 0;
+			$(function(){
+				//事件绑定,bind新版不在使用
+//				 	$("input[type=button]").bind("click",function(){
+//				 		alert("hello");
+//				 	});
+				 	$("input[type=button],div,body").on("click",function(){
+				 		alert("hello"+ count++);
+				 		//阻止事件冒泡
+				 		//设计全局变量，有可能需要处理
+				 		event.stopPropagation();
+				 	});
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+	    <img src="img/img6.png">
+		<input type="button" name="" id="" value="press" />
+	    </div>
+		
+	</body>
+</html>

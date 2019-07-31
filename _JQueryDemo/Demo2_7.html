@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+			//DOM操作函数 append()|元素|function|文本内容 each(). remove() empty()等等
+//			$("#infoDiv").append("<h1>hello</h1>");
+//			$("#infoDiv").append(function(){
+//				if($("#showDiv").text() == "hello")
+//				return java;
+//				else
+//				 return c++;
+//			});
+			//将文本变为DOM对象,remove清空元素
+			$(function(){
+				var obj = $("<h1>hello</h1>");
+			    //$("#showDiv").append(obj);
+			    //$("p").append(" <b>Hello world!</b>");
+			    //$("#showDiv").remove();
+			    $("#showDiv").after($("#infoDiv"));
+			    //before after 将指定元素放到之前或之后
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div id="infoDiv">ww</div>
+		<div id="showDiv">hello</div>
+		<p></p>
+	</body>
+</html>

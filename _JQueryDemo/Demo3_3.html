@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+				<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+		//动画操作
+		//层的显示与隐藏
+		$(function(){
+//			$("#myDiv").hover(function(){
+//				$("#myDiv").show(5000);
+//			},
+//			function(){
+//				$("#myDiv").hide(5000);
+//			});
+			//slideDown(时间,回调函数); 向下滑动，显示
+			//slideUp(时间,回调函数); 向上卷起，一般表示隐藏
+			//slideToggle(时间,回调函数);，进行显示与隐藏的一个切换
+//			$("#myDiv").hover(function(){
+//				$("#myDiv").slideDown(5000);
+//			},
+//			function(){
+//				$("#myDiv").slideUp(5000);
+//			});
+            $("#myDiv").one("mouseover",function(){
+            	$("#myDiv").slideDown(5000,function(){
+            		$("#myDiv").slideUp(3000);
+            	});
+            });
+            //sliderToggle(),隐藏变为显示,显示变为隐藏
+		});
+		</script>
+	</head>
+	<body>
+		<div id="myDiv" display:none>
+			<img src="img/img6.png">
+		</div>
+	</body>
+</html>

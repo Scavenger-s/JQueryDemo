@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+			//属性操作
+			$(function(){
+				//find()取得全部子元素,children()取得第一级别子元素
+				//$(".lev-a").find(".lev-b").attr("class","info");
+				//$("div>img").attr("src","img/img6.png");
+				//$("div>img").attr("width","300px");
+				//使用JSON结构设置,attr设置属性
+				//$("div>img").attr({"src":"img/img6.png","width":"500px"});
+				//删除属性
+				//$("div>img").removeAttr("width");
+				//取得属性
+				//alert($("div>span").text());
+				//alert($("div>span").html());
+				//取出内容设置内容
+				//alert($("#msg").val());
+				//$("#msg").val("hello world");
+				//$("#msg").addClass();//增加一组样式
+				//设置样式
+				//$("#msg").css({"background":"FF0000","color":"yellow"});
+				//$("#msg").css("background","#FF0000");
+				//removeClass()，移除一组样式
+				//attr取得属性
+				
+				alert($("#msg").attr("id"));
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<img>
+		</div>
+		<div>
+			<span id=""><h1>hello world</h1></span>
+		</div>
+		<input type="text" name="msg" id="msg" value="ee" class="info"/>
+		
+	</body>
+</html>

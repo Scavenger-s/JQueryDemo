@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+			//克隆操作
+			$(function(){
+				//var obj = $("#msg").clone();
+				//obj.attr("value","克隆");
+				//$("#mydiv").append(obj);
+				//warp元素的包裹操作
+				//empty() 清空元素
+				//$("table").empty();
+				//replaceWith() 替换函数
+				//each函数 this不能使用val $(this)转换,使用each 必须加上index
+			});
+			function showDelete(){
+				var ids = "";
+				$(":checkbox:checked").each(function(index){
+					ids += $(this).val() +" ";
+				});
+				if(ids == ""){
+					alert("还未选择");
+				}
+				else{
+					window.confirm("确认？");
+					alert("执行删除" + ids); 
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!--<input type="button" name="msg" id="msg" value="显示" />
+		<div id="mydiv">ssssss</div>
+		<table border="1px" width="35%">
+			<tr>
+				<td>11</td>
+				<td>21</td>
+				<td>31</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>21</td>
+				<td>31</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>21</td>
+				<td>31</td>
+			</tr>
+		</table>-->
+		<input type="checkbox" name="msg" id="msg" value="1" />部门1
+		<input type="checkbox" name="msg" id="msg" value="2" />部门2
+		<input type="checkbox" name="msg" id="msg" value="3" />部门3
+		<input type="checkbox" name="msg" id="msg" value="4" />部门4
+		<input type="checkbox" name="msg" id="msg" value="5" />部门5
+		<input type="button" name="dele" id="dele" value="删除" onclick="showDelete()"/>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+		//动画操作
+		//淡入淡出
+		//fadeIn(时间,回调函数),淡入显示   fadeOut(),淡出显示
+		$(function(){
+//			$("#msg").fadeOut(5000,function(){
+//				$("#msg").fadeIn(3000);
+//				
+//				//fadeTo() 淡入淡出极限值，部分淡出设置小数
+//			});
+ 			$("#msg").fadeTo(3000,0.5);
+		});
+		</script>
+	</head>
+	<body>
+		<div display:none>
+		<img src="img/img6.png" width="300px" id="msg">
+		</div>
+	</body>
+</html>

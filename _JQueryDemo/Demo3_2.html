@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="css/mldn.css" />
+		<script language="JavaScript">
+		
+			$(function(){
+//				 	$("input[type=button],div,body").on("click",function(){
+//				 		alert("hello"+ count++);
+//				 		//阻止事件冒泡
+//				 		//设计全局变量，有可能需要处理
+//				 		event.stopPropagation();
+//				 	});
+//				 	$("input[type=button]").click(function(){
+//				 		alert("hello");
+//				 		//阻止事件冒泡
+//				 		//设计全局变量，有可能需要处理
+//				 		
+//				 	});
+				 	//设置多个事件 JSON 可以进行处理
+//				 	$("input[type= button]").on({focus : function(){
+//				 		alert("hello")
+//				 	},
+//				 	click : function(){
+//				 		alert("按");
+//				 	}
+//				 	});
+//					$("#myDiv").on({
+//						//切换事件,可以使用切换事件 hover
+//						mouseover : function(){
+//							
+//							$(this).wrap("<h1>");
+//						},
+//						mouseout : function(){
+//							$(this).unwrap("<h1>");
+//						}
+//					});
+//					$("#myDiv").hover(function(){
+//							
+//							$(this).wrap("<h1>");
+//						},
+//					    function(){
+//							$(this).unwrap("<h1>");
+//						});
+						
+						
+						//事件解绑操作
+						//$("#myDiv").unbind("click");
+						//one() 函数绑定,只弹框一次
+						$("#myDiv").one("click",function(){
+							alert("hello world");
+						});
+			});
+		</script>
+	</head>
+	<body>
+		<!--<div>
+	    <img src="img/img6.png">
+		<input type="button" name="" id="" value="press" />
+	    </div>-->
+	    <div id="myDiv">
+	    	www.baidu.com
+	    </div>
+	</body>
+</html>
